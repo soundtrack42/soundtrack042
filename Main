@@ -1,0 +1,8 @@
+public class Main {
+    public static void main(String[] args) {
+        var p1 = new Programma("k", "tua", "mfds", "lok", 2018);
+        var p2 = new Programma("k", "tua", "mfds", "lok", 2020);
+        System.out.println(p1);
+        System.out.println(p1.compareAnno(p2.getAnno()));
+    }
+}

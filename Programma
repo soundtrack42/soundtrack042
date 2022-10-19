@@ -1,0 +1,49 @@
+public class Programma {
+    final String denominazione;
+    final String produttore;
+    final String versione;
+    final String SO;
+    final int anno;
+
+    public Programma(final String denominazione, final String produttore, final String versione, final String SO, final int anno) {
+        this.denominazione = denominazione;
+        this.produttore = produttore;
+        this.versione = versione;
+        this.SO = SO;
+        this.anno = anno;
+    }
+
+    public Programma Copia() {
+        var p = new Programma(denominazione, produttore, versione, SO, anno);
+        return p;
+    }
+
+    public String getDenominazione() {
+        return denominazione;
+    }
+
+    public String getProduttore() {
+        return produttore;
+    }
+
+    public String getVersione() {
+        return versione;
+    }
+
+    public String getSO() {
+        return SO;
+    }
+
+    public int getAnno() {
+        return anno;
+    }
+
+    @Override
+    public String ToString() {
+        return "denominazione: " + denominazione + ", produttore: " + produttore + ", versione: " + versione + ", SO: " + SO + ", anno: " + anno;
+    }
+
+    public boolean compareAnno(int anno) {
+        return this.anno>=anno;
+    }
+}
